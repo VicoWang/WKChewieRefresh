@@ -8,11 +8,10 @@
 #import "UIScrollView+WKExtension.h"
 #import <objc/runtime.h>
 
-//#define WK_SYSTEM_VERSION_GREATER_NOT_LESS_THAN(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
-
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunguarded-availability-new"
 @implementation UIScrollView (WKExtension)
+
 static BOOL wkgt_ios_11_;
 + (void)load {
     // 缓存判断值
